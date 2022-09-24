@@ -1,0 +1,456 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background-color: rgb(82, 83, 83);
+}
+
+
+.container-one {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./img/2018-07-07-20-54-11.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-left: 6%;
+    padding-right: 6%;
+    
+}
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-family: 'Libre Franklin', sans-serif;
+    /* font-weight: 600; */
+    /* margin: 0 16px; */
+    transition: 0.4s ease-in-out;
+    padding: 11px;
+    border-radius: 99px;
+}
+nav ul li a.is-active, nav ul li a:hover {
+    background-color: purple;
+    
+}
+/* nav ul li :hover {
+    color:purple;
+    transition: 1.0s;
+}
+
+.is-active {
+    color: purple;
+} */
+.name-quote  {
+    color: white;
+    position: relative;
+    top: 26%;
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+}
+.name-quote h1 {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(./img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+.name-quote p {
+    position: relative;
+    top: 60px;
+    font-size: large;
+    font-family: 'Smooch', cursive;
+}
+.logo img {
+    float: left;
+    width: 90px;
+    height: auto;
+}
+.container {
+    position: absolute;
+    top: 60%;
+    left: 25px;
+    width: 1250px;
+    height: 1000px;
+    margin: 200px auto;
+}
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(225, 225, 255, 0));
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.37);
+}
+h4 {
+    position: absolute;
+    top: 133px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+.link {
+    position: absolute;
+    top: 10px;
+    left: 42%;
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+.link::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    background-color: rgb(125, 20, 167);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+}
+.link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "img" "text" ;
+    font-family:  Roboto;
+    border-radius: 18px;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    text-align: center;
+    max-width: 42ch;
+    height: 55%;
+    position: absolute;
+    top: 47pc;
+    left: 3%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.card-img {
+    grid-area: img;
+    background-image:url(./img/DARK\ ACADEMIA.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.card-text{
+    grid-area: text;
+    position: absolute;
+    top: 15%;
+    left: 2.3pc;  
+}
+
+.card-text .number {
+    color: purple;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card-text p {
+    color: rgb(83, 31, 31);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    /* align-items: center; */
+}
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 25px;
+}
+.card:hover {
+    transform: scale(0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.card2 {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "img" "text" ;
+    font-family:  Roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    text-align: center;
+    max-width: 42ch;
+    height: 55%;
+    position: absolute;
+    top: 47pc;
+    left: 38%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.card-img2 {
+    /* grid-area: img2; */
+    background-image:url(./img/BodyBayu.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.card-text2{
+    grid-area: text;
+    position: absolute;
+    top: 15%;
+    left: 3.5pc;  
+}
+.card-text2 .number2 {
+    color: purple;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card-text2 p {
+    color: rgb(83, 31, 31);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+.card-text2 h2 {
+    margin-top: 0px;
+    font-size: 25px;
+}
+.card2:hover {
+    transform: scale(0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.card3 {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "img" "text" ;
+    font-family:  Roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    text-align: center;
+    max-width: 42ch;
+    height: 55%;
+    position: absolute;
+    top: 47pc;
+    left: 73%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.card-img3{
+    /* grid-area: img3; */
+    background-image:url(./img/Cook\ Hall\,\ Design\ by\ WA\ International.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.card-text3{
+    grid-area: text;
+    position: absolute;
+    top: 15%;
+    left: 3.3pc;  
+}
+.card-text3 .number3 {
+    color: purple;
+    font-size: 13px;
+    font-weight: bold;
+}
+.card-text3 p {
+    color: rgb(83, 31, 31);
+    font-size: 15px;
+    font-weight: 300;
+}
+.card-text3 h2 {
+    margin-top: 0px;
+    font-size: 25px;
+}
+.card3:hover {
+    transform: scale(0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.card4 {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "img" "text" ;
+    font-family:  Roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    text-align: center;
+    max-width: 42ch;
+    height: 55%;
+    position: absolute;
+    top: 76pc;
+    left: 3%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.card-img4{
+    /* grid-area: img3; */
+    background-image:url(./img/Basketball\ Gifts\ for\ Men\ _\ EPIC\ Goods.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.card-text4{
+    grid-area: text;
+    position: absolute;
+    top: 15%;
+    left: 2.5pc;  
+}
+.card-text4 .number4 {
+    color: purple;
+    font-size: 13px;
+    font-weight: bold;
+}
+.card-text4 p {
+    color: rgb(83, 31, 31);
+    font-size: 15px;
+    font-weight: 300;
+}
+.card-text4 h2 {
+    margin-top: 0px;
+    font-size: 25px;
+}
+.card4:hover {
+    transform: scale(0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.card5 {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "img" "text" ;
+    font-family:  Roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    text-align: center;
+    max-width: 42ch;
+    height: 55%;
+    position: absolute;
+    top: 76pc;
+    left: 38%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.card-img5{
+    /* grid-area: img3; */
+    background-image:url(./img/download\ \(1\).jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.card-text5{
+    grid-area: text;
+    position: absolute;
+    top: 15%;
+    left: 2pc;  
+}
+.card-text5 .number5 {
+    color: purple;
+    font-size: 13px;
+    font-weight: bold;
+}
+.card-text5 p {
+    color: rgb(83, 31, 31);
+    font-size: 15px;
+    font-weight: 300;
+}
+.card-text5 h2 {
+    margin-top: 0px;
+    font-size: 25px;
+}
+.card5:hover {
+    transform: scale(0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+.card6 {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "img" "text" ;
+    font-family:  Roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    text-align: center;
+    max-width: 42ch;
+    height: 55%;
+    position: absolute;
+    top: 76pc;
+    left: 73%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.card-img6{
+    /* grid-area: img3; */
+    background-image:url(./img/Room\ decor.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.card-text6{
+    grid-area: text;
+    position: absolute;
+    top: 15%;
+    left: 1pc;  
+}
+.card-text6 .number6 {
+    color: purple;
+    font-size: 13px;
+    font-weight: bold;
+}
+.card-text6 p {
+    color: rgb(83, 31, 31);
+    font-size: 15px;
+    font-weight: 300;
+}
+.card-text6 h2 {
+    margin-top: 0px;
+    font-size: 25px;
+}
+.card6:hover {
+    transform: scale(0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}

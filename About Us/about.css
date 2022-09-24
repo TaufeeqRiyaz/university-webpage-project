@@ -1,0 +1,211 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./background-about.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-family: 'Libre Franklin', sans-serif;
+    /* font-weight: 600; */
+    /* margin: 0 16px; */
+    transition: 0.4s ease-in-out;
+    padding: 11px;
+    border-radius: 99px;
+}
+nav ul li a.is-active, nav ul li a:hover {
+    background-color: purple;
+    
+}
+.head h1 {
+    color: white;
+    position: absolute;
+    top: 1.5pc;
+    left: 5%;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.head h1 {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(./back-about.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.head h1::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: white;
+}
+.about-info {
+    height: 46%;
+    width: 50%;
+    background-color: rgba(126, 119, 119, 0.486);
+    position: absolute;
+    top: 9pc;
+    left: 2%;
+}
+.about-info h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+hr.one {
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+    background-color: rebeccapurple;
+}
+.about-info p   {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: large;
+    top: 20%;
+    color: white;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.about-info::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: rgb(125, 20, 167);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+}
+.about-info:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.about-info2 {
+    height: 48%;
+    width: 25%;
+    background-color: rgba(126, 119, 119, 0.486);
+    position: absolute;
+    top: 9pc;
+    left: 66%;
+}
+.about-info2 h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+hr.two {
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+    background-color: rebeccapurple;
+}
+.about-info2 p   {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: large;
+    top: 14%;
+    color: white;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.about-info2::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: rgb(125, 20, 167);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+}
+.about-info2:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.about-info3 {
+    height: 28%;
+    width: 90%;
+    background-color: rgba(126, 119, 119, 0.486);
+    position: absolute;
+    bottom: 1pc;
+    right: 7%;
+}
+.about-info3 h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+hr.three {
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+    background-color: rebeccapurple;
+}
+.about-info3 p   {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: large;
+    bottom: 3pc;
+    color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.about-info3::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: rgb(125, 20, 167);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+}
+.about-info3:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}

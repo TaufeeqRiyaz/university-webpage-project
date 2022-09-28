@@ -114,6 +114,7 @@ h4 {
 }
 .link {
     position: absolute;
+    text-align: center;
     top: 10px;
     left: 42%;
     text-decoration: none;
